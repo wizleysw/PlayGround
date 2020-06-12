@@ -14,23 +14,23 @@ class ktCustomLifeCycleObserver : LifecycleObserver {
         Log.e(TAG, "onCreate")
     }
 
-        @OnLifecycleEvent(Lifecycle.Event.ON_START)
+    @OnLifecycleEvent(Lifecycle.Event.ON_START)
     fun onStart(){
         Log.e(TAG, "onStart")
     }
-        @OnLifecycleEvent(Lifecycle.Event.ON_RESUME)
+    @OnLifecycleEvent(Lifecycle.Event.ON_RESUME)
     fun onResume(){
         Log.e(TAG, "onResume")
     }
-        @OnLifecycleEvent(Lifecycle.Event.ON_PAUSE)
+    @OnLifecycleEvent(Lifecycle.Event.ON_PAUSE)
     fun onPause(){
         Log.e(TAG, "onPause")
     }
-        @OnLifecycleEvent(Lifecycle.Event.ON_STOP)
+    @OnLifecycleEvent(Lifecycle.Event.ON_STOP)
     fun onStop(){
         Log.e(TAG, "onStop")
     }
-        @OnLifecycleEvent(Lifecycle.Event.ON_DESTROY)
+    @OnLifecycleEvent(Lifecycle.Event.ON_DESTROY)
     fun onDestroy(){
         Log.e(TAG, "onDestroy")
     }

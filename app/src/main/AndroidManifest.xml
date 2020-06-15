@@ -10,23 +10,23 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".components.activity.activitystack.ProtoActivity">
+            android:name=".components.activity.launchmode.ProtoActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".components.activity.activitystack.StandardActivity"
+            android:name=".components.activity.launchmode.StandardActivity"
             android:launchMode="standard"/>
         <activity
-            android:name=".components.activity.activitystack.SingleTaskActivity"
+            android:name=".components.activity.launchmode.SingleTaskActivity"
             android:launchMode="singleTask"/>
         <activity
-            android:name=".components.activity.activitystack.SingleTopActivity"
+            android:name=".components.activity.launchmode.SingleTopActivity"
             android:launchMode="singleTop"/>
         <activity
-            android:name=".components.activity.activitystack.SingleInstanceActivity"
+            android:name=".components.activity.launchmode.SingleInstanceActivity"
             android:launchMode="singleInstance"/>
 
         <activity android:name=".components.activity.activitymove.ktNavigateToActivity"/>

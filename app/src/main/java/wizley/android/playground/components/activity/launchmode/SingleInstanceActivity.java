@@ -1,4 +1,4 @@
-package wizley.android.playground.components.activity.activitystack;
+package wizley.android.playground.components.activity.launchmode;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -11,8 +11,8 @@ import androidx.annotation.Nullable;
 
 import wizley.android.playground.R;
 
-public class StandardActivity extends Activity implements View.OnClickListener {
-    private static String TAG = "StandardActivity";
+public class SingleInstanceActivity extends Activity implements View.OnClickListener {
+    private static String TAG = "SingleInstanceActivity";
 
     private Button standard;
     private Button singletop;
@@ -70,6 +70,13 @@ public class StandardActivity extends Activity implements View.OnClickListener {
         super.onDestroy();
 
         Log.e(TAG, "onDestroy");
+    }
+
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+
+        Log.e(TAG, "onNewIntent");
     }
 
     @Override

@@ -1,4 +1,4 @@
-package wizley.android.playground.components.activity.activitystack;
+package wizley.android.playground.components.activity.launchmode;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -11,8 +11,8 @@ import androidx.annotation.Nullable;
 
 import wizley.android.playground.R;
 
-public class SingleInstanceActivity extends Activity implements View.OnClickListener {
-    private static String TAG = "SingleInstanceActivity";
+public class SingleTopActivity extends Activity implements View.OnClickListener {
+    private static String TAG = "SingleTopActivity";
 
     private Button standard;
     private Button singletop;

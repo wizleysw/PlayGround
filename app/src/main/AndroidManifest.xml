@@ -9,15 +9,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".components.activity.ktNavigateFromActivity">
+        <activity
+            android:name=".components.activity.activitystack.ProtoActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".components.activity.activitystack.StandardActivity"
+            android:launchMode="standard"/>
+        <activity
+            android:name=".components.activity.activitystack.SingleTaskActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".components.activity.activitystack.SingleTopActivity"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name=".components.activity.activitystack.SingleInstanceActivity"
+            android:launchMode="singleInstance"/>
 
-        <activity android:name=".components.activity.ktNavigateToActivity"/>
+        <activity android:name=".components.activity.activitymove.ktNavigateToActivity"/>
     </application>
 
 </manifest>

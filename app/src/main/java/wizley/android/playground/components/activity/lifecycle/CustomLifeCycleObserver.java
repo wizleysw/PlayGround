@@ -1,4 +1,4 @@
-package wizley.android.playground.components.activity;
+package wizley.android.playground.components.activity.lifecycle;
 
 import android.util.Log;
 

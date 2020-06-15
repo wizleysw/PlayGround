@@ -1,4 +1,4 @@
-package wizley.android.playground.components.activity
+package wizley.android.playground.components.activity.lifecycle
 
 import android.app.Activity
 import android.os.Bundle
@@ -7,6 +7,7 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleOwner
 import wizley.android.playground.R
 import androidx.lifecycle.LifecycleRegistry
+import wizley.android.playground.components.activity.lifecycle.ktCustomLifeCycleObserver
 
 class ktLifeCycleActivity : Activity(), LifecycleOwner{
     private val VALUE = ""

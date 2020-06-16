@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".components.activity.data.bundle.ktBundleActivity">
+            android:name=".components.activity.implicit.WebviewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -29,7 +29,7 @@
             android:name=".components.activity.launchmode.SingleInstanceActivity"
             android:launchMode="singleInstance"/>
 
-        <activity android:name=".components.activity.activitymove.ktNavigateToActivity"/>
+        <activity android:name=".components.activity.explicit.ktNavigateToActivity"/>
     </application>
 
 </manifest>

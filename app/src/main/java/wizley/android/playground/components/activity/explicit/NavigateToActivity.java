@@ -1,4 +1,4 @@
-package wizley.android.playground.components.activity.activitymove;
+package wizley.android.playground.components.activity.explicit;
 
 import android.app.Activity;
 import android.content.Intent;

@@ -5,4 +5,5 @@
     <string name="start_activity_for_result">StartActivityForResult</string>
     <string name="navigate_to">Navigate to</string>
     <string name="ok">ok</string>
+    <string name="chooser_title">Chooser</string>
 </resources>

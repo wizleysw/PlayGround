@@ -10,14 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".components.activity.implicit.SendTextActivity">
+            android:name=".components.activity.implicit.ktSendTextActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
         </activity>
-        <activity android:name=".components.activity.implicit.ReceiveTextActivity">
+        <activity android:name=".components.activity.implicit.ktReceiveTextActivity">
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
                 <category android:name="android.intent.category.DEFAULT"/>

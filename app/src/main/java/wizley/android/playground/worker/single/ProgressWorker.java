@@ -1,4 +1,4 @@
-package wizley.android.playground.worker;
+package wizley.android.playground.worker.single;
 
 import android.content.Context;
 import android.util.Log;

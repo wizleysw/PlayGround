@@ -1,4 +1,4 @@
-package wizley.android.playground.worker;
+package wizley.android.playground.worker.single;
 
 import android.os.Build;
 import android.os.Bundle;

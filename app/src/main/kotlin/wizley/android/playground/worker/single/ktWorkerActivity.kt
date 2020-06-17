@@ -1,8 +1,7 @@
-package wizley.android.playground.worker
+package wizley.android.playground.worker.single
 
 import android.os.Build
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.util.Log
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity

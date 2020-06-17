@@ -20,7 +20,7 @@ public class MyViewModel extends ViewModel {
     }
 
     public long getTimeTick() {
-        return this.timetick.getValue();
+        return timetick.getValue();
     }
 
     public MutableLiveData<Long> getTick(){

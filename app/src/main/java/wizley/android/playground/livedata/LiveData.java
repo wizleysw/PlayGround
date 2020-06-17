@@ -4,7 +4,7 @@ import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
 // See observer pattern in viewModel package
-public class NameViewModel extends ViewModel {
+public class LiveData extends ViewModel {
     private MutableLiveData<String> currentName;
 
     private String getCurrentName(){

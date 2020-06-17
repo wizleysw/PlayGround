@@ -11,7 +11,7 @@ import androidx.lifecycle.ViewModelProvider
 import org.jetbrains.anko.find
 import wizley.android.playground.R
 
-class ktViewModelChronometerActivity : AppCompatActivity() {
+class ktViewModelChronometerActivity : AppCompatActivity(), Chronometer.OnChronometerTickListener{
     private val TAG = "ktViewModelChronometerActivity"
 
     private var model : ktMyViewModel?= null
@@ -27,16 +27,18 @@ class ktViewModelChronometerActivity : AppCompatActivity() {
         model = ViewModelProvider(this, ViewModelProvider.AndroidViewModelFactory.getInstance(application)).get(ktMyViewModel::class.java)
 
         chronometer!!.base = model!!.getStartTime()
-        chronometer!!.setOnChronometerTickListener {
-            Chronometer.OnChronometerTickListener { _ -> model!!.setTimeTick(model!!.getTimeTick() + 1)
-        }}
+        chronometer!!.setOnChronometerTickListener(this)
 
-        val tickObserver = Observer<Long> {
-            value -> Log.e(TAG, model!!.getTimeTick().toString())
+        val tickObserver = Observer<Long> { _ -> Log.e(TAG, model!!.getTimeTick().toString())
         }
 
         model!!.getTick().observe(this, tickObserver)
 
         chronometer!!.start()
     }
+
+    override fun onChronometerTick(chronometer: Chronometer?) {
+        model!!.setTimeTick(model!!.getTimeTick() + 1)
+    }
+
 }

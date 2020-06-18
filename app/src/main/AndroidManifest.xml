@@ -10,14 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".databinding.KTDataBindingActivity">
+            android:name=".components.activity.pending.PendingActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
         </activity>
-        <activity android:name=".components.activity.explicit.KTNavigateToActivity"/>
+        <activity android:name=".components.activity.pending.PendingNotificationActivity"/>
     </application>
 
 </manifest>

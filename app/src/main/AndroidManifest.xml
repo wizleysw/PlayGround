@@ -10,14 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".worker.chained.ktWorkContinuationActivity">
+            android:name=".databinding.KTDataBindingActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
         </activity>
-        <activity android:name=".components.activity.explicit.ktNavigateToActivity"/>
+        <activity android:name=".components.activity.explicit.KTNavigateToActivity"/>
     </application>
 
 </manifest>

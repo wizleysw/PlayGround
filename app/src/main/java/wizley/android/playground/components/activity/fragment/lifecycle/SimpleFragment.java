@@ -17,6 +17,7 @@ import wizley.android.playground.R;
 
 public class SimpleFragment extends Fragment {
     private static final String TAG = "SimpleFragment";
+    private String tag = "";
     private int init = -1;
     private ImageView imageView;
 
@@ -49,6 +50,12 @@ public class SimpleFragment extends Fragment {
         super.onCreate(savedInstanceState);
         Log.e(TAG, "onCreate");
 
+        Bundle arguments = getArguments();
+        if(arguments != null){
+            tag = arguments.getString("tag");
+            Log.e(TAG, tag);
+        }
+
         // non-graphical
         init = 1;
     }
@@ -67,7 +74,12 @@ public class SimpleFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         imageView = (ImageView) view.findViewById(R.id.imageView);
-        imageView.setImageDrawable(getResources().getDrawable(R.drawable.ic_launcher_foreground));
+
+        if(tag!= null && tag.equals("A")) {
+            imageView.setImageDrawable(getResources().getDrawable(R.drawable.ic_launcher_foreground));
+        } else if(tag!= null && tag.equals("B")){
+            imageView.setImageDrawable(getResources().getDrawable(R.drawable.ic_launcher_background));
+        }
         callback.onImageChanged();
     }
 

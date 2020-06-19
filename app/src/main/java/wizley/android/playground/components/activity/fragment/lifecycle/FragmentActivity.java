@@ -29,6 +29,12 @@ public class FragmentActivity extends androidx.fragment.app.FragmentActivity imp
 
         setContentView(R.layout.activity_fragment);
 
+        // If this not added, fragment which restored will be created
+        // as well as new fragment
+        if(savedInstanceState != null){
+            return;
+        }
+
         frameLayoutA = findViewById(R.id.fragmentA);
         frameLayoutB = findViewById(R.id.fragmentB);
 

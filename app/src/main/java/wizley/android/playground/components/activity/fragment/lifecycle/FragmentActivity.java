@@ -45,49 +45,43 @@ public class FragmentActivity extends androidx.fragment.app.FragmentActivity imp
         fragmentB = new SimpleFragment();
 
         fragmentTransaction.add(R.id.fragmentA, fragmentA);
-//        fragmentTransaction.add(R.id.fragmentB, fragmentB);
+        // fragmentTransaction.add(R.id.fragmentB, fragmentB);
         fragmentTransaction.commit();
     }
 
     @Override
     public void onAttachFragment(@NonNull Fragment fragment) {
         super.onAttachFragment(fragment);
-
         Log.e(TAG, "onAttachFragment");
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-
         Log.e(TAG, "onStart");
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-
         Log.e(TAG, "onResume");
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-
         Log.e(TAG, "onPause");
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-
         Log.e(TAG, "onStop");
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-
         Log.e(TAG, "onDestroy");
     }
 

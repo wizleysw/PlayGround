@@ -70,8 +70,8 @@ public class SimpleFragment extends Fragment {
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        Log.e(TAG, "onViewCreated");
         super.onViewCreated(view, savedInstanceState);
+        Log.e(TAG, "onViewCreated");
 
         imageView = (ImageView) view.findViewById(R.id.imageView);
 

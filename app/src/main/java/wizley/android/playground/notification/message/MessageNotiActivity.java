@@ -55,7 +55,7 @@ public class MessageNotiActivity extends AppCompatActivity implements View.OnCli
 
         final NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
 
-        final NotificationChannel channel = new NotificationChannel("channel_id", "ProgressNoti", NotificationManager.IMPORTANCE_DEFAULT);
+        final NotificationChannel channel = new NotificationChannel("channel_id", "MessageNoti", NotificationManager.IMPORTANCE_DEFAULT);
         notificationManager.createNotificationChannel(channel);
 
         Notification notification = new NotificationCompat.Builder(this, "channel_id")

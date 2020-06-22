@@ -66,6 +66,8 @@ public class BasicNotiActivity extends AppCompatActivity implements View.OnClick
                 .setAutoCancel(true)
                 .addAction(R.drawable.ic_baseline_add_24, "ADD", pendingIntent)
                 .addAction(R.drawable.ic_baseline_remove_24, "REMOVE", pendingIntent)
+                .setStyle(new Notification.BigTextStyle()
+                        .bigText("this is big text !!!"))
                 .build();
 
         notificationManager.notify(notificationId, notification);

@@ -10,14 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".components.activity.fragment.resultlistener.KTFragmentActivity">
+            android:name=".notification.reply.ReplyNotiActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-        <activity android:name=".components.activity.pending.KTPendingNotificationActivity"/>
+
+        <receiver android:name=".notification.reply.ReplyNotiReceiver">
+            <intent-filter>
+                <action android:name="wizley.android.playground.noti"/>
+            </intent-filter>
+        </receiver>
+
     </application>
 
 </manifest>

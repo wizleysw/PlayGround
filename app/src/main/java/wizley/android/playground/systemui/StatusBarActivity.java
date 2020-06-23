@@ -30,7 +30,6 @@ public class StatusBarActivity extends AppCompatActivity {
             }
         }
 
-
         setContentView(R.layout.activity_button);
     }
 }

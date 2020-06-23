@@ -10,14 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
-            android:name=".dialog.KTSignInDialogActivity">
+            android:name=".ui.dialog.KTSignInDialogActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <receiver android:name=".notification.reply.KTReplyNotiReceiver">
+        <receiver android:name=".ui.notification.reply.KTReplyNotiReceiver">
             <intent-filter>
                 <action android:name="wizley.android.playground.noti"/>
             </intent-filter>

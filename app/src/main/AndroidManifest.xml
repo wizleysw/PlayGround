@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
-            android:name=".components.service.messengerservice.MessengerActivity">
+            android:name=".components.broadcast.BroadcastActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -28,6 +28,14 @@
         <service
             android:name=".components.service.bindservice.MyBinderService"
             tools:ignore="Instantiatable" />
+
+        <receiver
+            android:name=".components.broadcast.MyBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="wizley.android.playground.broadcast"/>
+            </intent-filter>
+        </receiver>
 
     </application>
 

@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
-            android:name=".components.broadcast.BroadcastActivity">
+            android:name=".components.service.bindservice.KTBindServiceActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -19,21 +19,21 @@
         </activity>
 
         <service
-            android:name=".components.service.messengerservice.MessengerService"/>
+            android:name=".components.service.messengerservice.KTMessengerService"/>
 
         <service
-            android:name=".components.service.serviceintent.MyIntentService"
+            android:name=".components.service.serviceintent.KTMyIntentService"
             tools:ignore="Instantiatable" />
 
         <service
-            android:name=".components.service.bindservice.MyBinderService"
+            android:name=".components.service.bindservice.KTMyBinderService"
             tools:ignore="Instantiatable" />
 
         <receiver
-            android:name=".components.broadcast.MyBroadcastReceiver"
+            android:name=".components.broadcast.KTMyBroadcastReceiver"
             android:exported="true">
             <intent-filter>
-                <action android:name="wizley.android.playground.broadcast"/>
+                <action android:name="wizley.android.playground.ktbroadcast"/>
             </intent-filter>
         </receiver>
 

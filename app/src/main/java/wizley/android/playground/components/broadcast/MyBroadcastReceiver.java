@@ -15,7 +15,7 @@ public class MyBroadcastReceiver extends BroadcastReceiver {
         Log.e(TAG, "onReceive");
         StringBuilder sb = new StringBuilder();
         sb.append("Action: ").append(intent.getAction()).append("\n");
-        sb.append("URI: ").append(intent.toUri(Intent.URI_INTENT_SCHEME).toString()).append("\n");
+        sb.append("URI: ").append(intent.toUri(Intent.URI_INTENT_SCHEME)).append("\n");
 
         String log = sb.toString();
         Log.e(TAG, log);

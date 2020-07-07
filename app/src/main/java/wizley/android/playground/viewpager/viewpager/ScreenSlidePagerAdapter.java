@@ -1,11 +1,13 @@
-package wizley.android.playground.viewpager;
+package wizley.android.playground.viewpager.viewpager;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 
-import static wizley.android.playground.viewpager.ScreenSlidePagerActivity.NUM_PAGES;
+import wizley.android.playground.viewpager.viewpager.ScreenSlidePageFragment;
+
+import static wizley.android.playground.viewpager.viewpager.ScreenSlidePagerActivity.NUM_PAGES;
 
 public class ScreenSlidePagerAdapter extends FragmentStatePagerAdapter {
 

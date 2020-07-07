@@ -1,4 +1,4 @@
-package wizley.android.playground.viewpager;
+package wizley.android.playground.viewpager.viewpager;
 
 import android.view.View;
 

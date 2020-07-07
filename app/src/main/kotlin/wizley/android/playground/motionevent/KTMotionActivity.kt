@@ -6,7 +6,6 @@ import android.view.GestureDetector
 import android.view.MotionEvent
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GestureDetectorCompat
-import androidx.core.view.MotionEventCompat
 
 class KTMotionActivity : AppCompatActivity(),
         GestureDetector.OnGestureListener,

@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
-            android:name=".components.provider.ProviderActivity">
+            android:name=".components.provider.KTProviderActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -41,8 +41,8 @@
         </receiver>
 
         <provider
-            android:authorities="wizley.android.playground.components.provider.myProvider"
-            android:name=".components.provider.MyProvider"
+            android:authorities="wizley.android.playground.components.provider.KTmyProvider"
+            android:name=".components.provider.KTMyProvider"
             android:exported="true"/>
 
     </application>

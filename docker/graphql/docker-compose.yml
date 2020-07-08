@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+ graphql:
+  container_name: django_graphql
+  image: django_graphql:1.0
+  environment:
+    - DJANGO_DEBUG=true
+  volumes:
+    - ./code:/code
+  ports:
+    - "8888:8888"
+  tty: true
+  command: python3 ./graphQL/manage.py runserver 0:8888

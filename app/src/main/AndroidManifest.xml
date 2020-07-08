@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
-            android:name=".camera.CameraActivity">
+            android:name=".components.provider.ProviderActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -39,6 +39,11 @@
                 <action android:name="wizley.android.playground.ktbroadcast"/>
             </intent-filter>
         </receiver>
+
+        <provider
+            android:authorities="wizley.android.playground.components.provider.myProvider"
+            android:name=".components.provider.MyProvider"
+            android:exported="true"/>
 
     </application>
 

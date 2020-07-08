@@ -1,0 +1,6 @@
+query studentType($name:String!){
+    students (name:$name){
+        name
+        age
+    }
+}

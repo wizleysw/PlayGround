@@ -1,0 +1,5 @@
+mutation addStudent($name:String!, $age:Int!){
+    addStudent(name:$name, age:$age){
+        success
+    }
+}

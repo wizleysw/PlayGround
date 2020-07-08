@@ -1,0 +1,5 @@
+mutation deleteStudent($name:String!){
+    deleteStudent(name:$name){
+        success
+    }
+}

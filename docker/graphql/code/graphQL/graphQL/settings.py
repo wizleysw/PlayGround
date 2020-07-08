@@ -25,7 +25,7 @@ SECRET_KEY = '7$ncb#ab+(w7pp70_@20!^tq)eb&&ax@sp#z4p7ai(&kmn#%un'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'graphene_django',
+    'api',
 ]
 
 MIDDLEWARE = [
@@ -98,6 +100,12 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+# Graphql
+
+GRAPHENE ={
+    'SCHEMA': 'api.schema.schema'
+}
 
 
 # Internationalization

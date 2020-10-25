@@ -14,7 +14,7 @@ All Features are written in both Java and Kotlin.
 - Components
 	- Activity
 		- Data
-			- Bundle : https://github.com/wizleysw/PlayGround/tree/master/app/src/main/kotlin/wizley/android/playground/api/rest
+			- Bundle : https://github.com/wizleysw/PlayGround/tree/master/app/src/main/kotlin/wizley/android/playground/components/activity/data/bundle
 			- Parcelable : https://github.com/wizleysw/PlayGround/tree/master/app/src/main/kotlin/wizley/android/playground/components/activity/data/parcelable
 		- Explicit : https://github.com/wizleysw/PlayGround/tree/master/app/src/main/kotlin/wizley/android/playground/components/activity/explicit
 		- Fragment
